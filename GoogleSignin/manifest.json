@@ -1,0 +1,28 @@
+{
+    "manifest_version":3,
+    "name":"Promptitude",
+    "version":"1.0",
+    "description":"Create your own Prompt",
+    "icons":{
+        "128":"icon128.png",
+        "32":"icon32.png",
+        "16":"icon16.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' https://www.gstatic.com https://*.firebaseio.com https://www.googleapis.com; object-src 'self';"
+    },
+    "action":{
+        "default_title":"Promptitude",
+        "default_popup":"popup.html"
+    },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "permissions":[
+        "identity","activeTab"
+    ],
+    "oauth2":{
+        "client_id":"183921202131-8stjrokcbir74sci75mgp7l9komgqfii.apps.googleusercontent.com",
+        "scopes":["https://www.googleapis.com/auth/contacts.readonly"]
+    }
+}

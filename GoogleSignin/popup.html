@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 300px;
+      height: 400px;
+        }
+.center-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) ;
+    text-align: center;
+}
+
+.text-field{
+    padding: 15px 40px;
+    margin: 20px 0;
+    border:2px solid green;
+    border-radius: 10px;
+    font-size:12px;
+    color:green
+}
+
+.btn-style{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border:1px solid green;
+    background-color: green;
+    color:white;
+}
+.btn-style:hover{
+    background-color: white;
+    color:green;
+}
+#register-div{
+    display: none;
+}
+.an-btn{
+    margin-top: 10px;
+    border:0;
+    background-color: none;
+    color:green;
+    font-size: 10px;
+}
+#result-box{
+    display: none;
+}
+#result-box{
+    display: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) ;
+    font-size: 14px;
+    color:green;
+}
+
+    </style>
+</head>
+<body>
+    <div class="center-box" id="login-div">
+        <h3>Login</h3>
+            <input type="email" name="login-email" id="login-email" class="text-field"><br>
+            <input type="password" name="login-password" id="login-password" class="text-field"><br>
+            <button type="submit" id="loginbtn" class="btn-style">Login</button><br>
+            <button id="reg-btn" class="an-btn">dont have an account? REGISTER</button><br>
+            <button id="google-sign-in" class="an-btn">Sign in with Google</button>
+    </div>
+    <div  id="register-div" class="center-box">
+        <h2>Register</h2>
+            <input type="email" name="email" id="email" class="text-field">
+            <input type="password" name="password" id="password" class="text-field">
+            <button type="submit" id="registerbtn" class="btn-style">Register</button><br>
+            <button id="log-btn" class="an-btn">have an account? LOGIN</button>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="data.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
