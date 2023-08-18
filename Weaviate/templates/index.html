@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptitude</title>
+</head>
+<body>
+    <h3>Create your Own Prompt</h3>
+    <form action="/add" method="post">
+        <input type="text" name="inputPrompt" id="promptInput">
+        <button type="submit" id="addPrompt">Add</button>
+    </form><br>
+    <form action="/search" method="post">
+        <input type="text" name="searchPrompt" id="searchPrompt">
+        <button type="submit" id="search">Search</button>
+    </form>
+    <div class="search_result">
+        {%for text in texts%}
+         {{text}}<br>
+        {%endfor%}
+    </div>
+</body>
+</html>
