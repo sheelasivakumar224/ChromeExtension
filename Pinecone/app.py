@@ -7,7 +7,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-api_key = "05be166d-0b87-4535-b875-ef117ddcadf7"
+api_key = "<API_KEY>"
 pinecone.init(api_key = api_key,environment="gcp-starter")
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
