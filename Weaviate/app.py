@@ -4,15 +4,14 @@ import json
 
 
 # Setting up an Api Key
-auth_config = weaviate.AuthApiKey(api_key = "07yvV3IdSmc7RrCt6kRvWGKrUaYqi4DGNXzU")
+auth_config = weaviate.AuthApiKey(api_key = "<API_KEY>")
 
 # Creating an Instance of the Client
 client = weaviate.Client(
-    url = "https://secondcluster-bg28obaw.weaviate.network",
+    url = "<Cluster_URL>",
     auth_client_secret= auth_config,
         additional_headers={
-        "X-OpenAI-Api-Key": "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",
-        "X-HuggingFace-Api-Key":"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",
+        "X-HuggingFace-Api-Key":"<API_KEY>",
     }
 )
 
