@@ -22,7 +22,7 @@
         "identity","activeTab"
     ],
     "oauth2":{
-        "client_id":"183921202131-8stjrokcbir74sci75mgp7l9komgqfii.apps.googleusercontent.com",
+        "client_id":"<Client_id>.apps.googleusercontent.com",
         "scopes":["https://www.googleapis.com/auth/contacts.readonly"]
     }
 }
