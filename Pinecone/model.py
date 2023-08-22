@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 import pinecone
-api_key = "05be166d-0b87-4535-b875-ef117ddcadf7"
+api_key = "<API-KEY>"
 pinecone.init(api_key = api_key,environment="gcp-starter")
 
 
